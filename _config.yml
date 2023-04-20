@@ -1,9 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Biodiversity Box
+title: Urban biodiversity
 author: hammerdirt botanist
-# logo: resources/logo.JPG
 copyright: "2021"
 
 # Force re-execution of notebooks on each build.
@@ -25,17 +24,20 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/thorerismann/flora-buckets  # Online location of your book
+  url: https://github.com/hammerdirt-analyst/flora-buckets  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-html:
-  use_issues_button: true
-  use_repository_button: true
-  comments: 'off'
 sphinx:
   config:
-    bibtex_reference_style: author_year
-
+    bibtex_reference_style: label
+    html_show_copyright: false
+    language: en
+    html_theme_options:
+      use_download_button: false
+      repository_url: https://github.com/hammerdirt-analyst/IQAASL-End-0f-Sampling-2021
+      use_issues_button: true
+      use_repository_button: true
+   

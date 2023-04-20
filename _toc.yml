@@ -2,18 +2,11 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: index
 
 parts:
   - caption: The flowers in Biel
     numbered: True
     chapters:
      - file: analysis.ipynb
-  - caption: A small germination experiment
-    numbered: True
-    chapters:
-     - file: germination.ipynb
-  - caption: Further reading
-    numbered: True
-    chapters:
      - file: references.md
